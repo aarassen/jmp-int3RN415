@@ -64,6 +64,9 @@ finding more resource
 
 [Registers purpose](http://6.s081.scripts.mit.edu/sp18/x86-64-architecture-guide.html)
 
+[qword pointer = 8byte](https://stackoverflow.com/questions/31211561/what-does-qword-ptr-hexvalue-mean-without-a-base-register) meaning take 8 byte from the location pointing at.
+
+[data segment register](https://www.tek-tips.com/viewthread.cfm?qid=717198)
 
 understaunding start:
 ```
