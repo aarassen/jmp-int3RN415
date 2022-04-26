@@ -7,10 +7,10 @@ So i would like to start by stating the purpose of this blog. In here i will pos
 
 so let's begin with our [first challenge](https://challenges.re/1/)
 
-## the challenge
+## THE CHALLENGE
 
 
-### task
+### THE TASK
 What does this code do? The function has 4 arguments and it is compiled by GCC for Linux x64 ABI (i.e., arguments are passed in registers).
 ```asm
 <f>:
@@ -30,5 +30,11 @@ begin:
   1a:                   mov    rax,rdx
   1d:                   ret
 ```
+
+### SOLUTION #1
+
+
+
+
 
 
