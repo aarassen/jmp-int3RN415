@@ -58,7 +58,8 @@ step3 : understand the code using the resouurce
        d:                   xor    rdx,rdx // set rdx to 0
 ```
 
-
+	finding more resource 
+    	[Registers purpose](http://6.s081.scripts.mit.edu/sp18/x86-64-architecture-guide.html)
 
 
 
