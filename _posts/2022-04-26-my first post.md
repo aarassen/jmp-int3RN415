@@ -13,7 +13,7 @@ so let's begin with our [first challenge](https://challenges.re/1/)
 ### THE TASK
 What does this code do? The function has 4 arguments and it is compiled by GCC for Linux x64 ABI (i.e., arguments are passed in registers).
 ```asm
-<f>:
+f:
    0:                   mov    r8,rdi
    3:                   push   rbx
    4:                   mov    rdi,rsi
@@ -31,7 +31,36 @@ begin:
   1d:                   ret
 ```
 
-### SOLUTION #1
+### SOLUTION: 
+
+step1 : understanding the question?
+
+	The function has 4 arguments == take 4 args
+    for Linux x64 == 64bit 
+    
+step2 : find resources  online 
+	
+    [x64 assembly cheat sheet](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
+    
+    [asm pdf](http://www.lacl.fr/tan/asm)
+    
+step3 : understand the code using the resouurce
+	
+    understatunding f:
+  	
+```asm
+    f:
+       0:                   mov    r8,rdi // copy rdi (destination) to r8 
+       3:                   push   rbx //  puch the value from rbx to the stack
+       4:                   mov    rdi,rsi // copy the rsi (source) to rdi (destination)
+       7:                   mov    rbx,rdx  // copy the value from rdx to rbx 
+       a:                   mov    rsi,r8 //copy the value from r8 to rsi (source)
+       d:                   xor    rdx,rdx // set rdx to 0
+```
+
+
+
+
 
 
 
