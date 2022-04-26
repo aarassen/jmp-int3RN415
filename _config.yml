@@ -7,11 +7,11 @@ author:
 
 baseurl: /jmp-int3RN415/
 
-source: ./jmp-int3RN415/
-destination: ./jmp-int3RN415/_site
-permalink: /jmp-int3RN415/:title
+source: .
+destination: ./_site
+permalink: /:title
 paginate: 3
-paginate_path: /jmp-int3RN415/page/:num/
+paginate_path: /page/:num/
 
 defaults:
   -
