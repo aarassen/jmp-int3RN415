@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Welcome to jmp internal 
 
@@ -68,18 +68,28 @@ finding more resource
 
 [data segment register](https://www.tek-tips.com/viewthread.cfm?qid=717198)
 
+
+
 understaunding start:
 ```
 begin:
-  10:                   lods   rax,QWORD PTR ds:[rsi]
-  12:                   div    rbx
-  15:                   stos   QWORD PTR es:[rdi],rax
+  10:                   lods   rax,QWORD PTR ds:[rsi] #Load qword at address (R)SI into RAX.
+  12:                   div    rbx 
+  			# div rbx will divide the 128-bit value in (**rdx, rax**) by **rbx**,
+            # then store the quotient in rax and the remainder in rdx.
+
+  15:                   stos   QWORD PTR es:[rdi],rax #Store RAX at address RDI 
+  
   17:                   loop   begin
   19:                   pop    rbx
   1a:                   mov    rax,rdx
   1d:                   ret
 ```
 
+finding more resource
 
+[lods instuction](https://www.felixcloutier.com/x86/lods:lodsb:lodsw:lodsd:lodsq)
 
-        
+[stos instruction](https://www.felixcloutier.com/x86/stos:stosb:stosw:stosd:stosq)
+
+[loop instruction](https://www.felixcloutier.com/x86/loop:loopcc)
