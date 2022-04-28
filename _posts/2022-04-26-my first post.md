@@ -71,7 +71,7 @@ finding more resource
 
 
 understaunding start:
-```
+```asm
 begin:
   10:                   lods   rax,QWORD PTR ds:[rsi] #Load qword at address (R)SI into RAX.
   12:                   div    rbx 
