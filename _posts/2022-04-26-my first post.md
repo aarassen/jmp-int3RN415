@@ -46,6 +46,8 @@ begin:
 [asm pdf](http://www.lacl.fr/tan/asm)
 
 [abi x64  resource](https://web.archive.org/web/20160801075146/http://www.x86-64.org/documentation/abi.pdf)
+
+[x64 calling convention](https://www.ired.team/miscellaneous-reversing-forensics/windows-kernel-internals/linux-x64-calling-convention-stack-frame)
     
 **Step3 : understand the code using the resouurce**
 	
@@ -74,7 +76,7 @@ finding more resource
 understaunding start:
 ```asm
 begin:
-  10:                   lods   rax,QWORD PTR ds:[rsi] #Load qword at address (R)SI into RAX.
+  10:                   lods   rax,QWORD PTR ds:[rsi] #Load qword at address RSI into RAX.
   12:                   div    rbx 
   			# div rbx will divide the 128-bit value in (**rdx, rax**) by **rbx**
             # then store the quotient in rax and the remainder in rdx.
@@ -91,6 +93,9 @@ begin:
   1d:                   ret # copy  value from rdx to rax and return
 ```
 
+so it find a value 64bit in lenght  and put in rax then divide it by the value in rbx 
+
+
 finding more resource
 
 [lods instuction](https://www.felixcloutier.com/x86/lods:lodsb:lodsw:lodsd:lodsq)
@@ -98,3 +103,5 @@ finding more resource
 [stos instruction](https://www.felixcloutier.com/x86/stos:stosb:stosw:stosd:stosq)
 
 [loop instruction](https://www.felixcloutier.com/x86/loop:loopcc)
+
+
