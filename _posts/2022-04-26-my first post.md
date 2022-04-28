@@ -75,7 +75,7 @@ understaunding start:
 begin:
   10:                   lods   rax,QWORD PTR ds:[rsi] #Load qword at address (R)SI into RAX.
   12:                   div    rbx 
-  			# div rbx will divide the 128-bit value in (**rdx, rax**) by **rbx**,
+  			# div rbx will divide the 128-bit value in (**rdx, rax**) by **rbx**
             # then store the quotient in rax and the remainder in rdx.
 
   15:                   stos   QWORD PTR es:[rdi],rax #Store RAX at address RDI 
