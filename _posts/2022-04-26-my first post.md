@@ -93,6 +93,8 @@ begin:
   1d:                   ret # copy  value from rdx to rax and return
 ```
 
+
+
 so it find a value 64bit in lenght  and put in rax then divide it by the value in rbx 
 
 
@@ -103,5 +105,8 @@ finding more resource
 [stos instruction](https://www.felixcloutier.com/x86/stos:stosb:stosw:stosd:stosq)
 
 [loop instruction](https://www.felixcloutier.com/x86/loop:loopcc)
+
+
+
 
 
