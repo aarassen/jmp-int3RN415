@@ -80,7 +80,9 @@ begin:
 
   15:                   stos   QWORD PTR es:[rdi],rax #Store RAX at address RDI 
   
-  17:                   loop   begin
+  17:                   loop   begin 
+  			# Performs a loop operation using the RCX as a counter
+  			# if rcx = 0 pass
   19:                   pop    rbx
   1a:                   mov    rax,rdx
   1d:                   ret
