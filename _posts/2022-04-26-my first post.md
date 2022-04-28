@@ -35,8 +35,9 @@ begin:
 
 **Step1 : understanding the question?**
 
-	The function has **4 arguments** == take 4 args + return address
+	The function has **4 arguments**  (i.e., arguments are passed in registers).== take 4 args + return address
     compiled by GCC for Linux x64 ABI == 64bit abi
+    
     
 **Step2 : find resources  online** 
 	
@@ -84,8 +85,8 @@ begin:
   			# Performs a loop operation using the RCX as a counter
   			# if rcx = 0 pass
   19:                   pop    rbx 
-  			# pop from top of the stack to rbx 
-  			#and increment stack pointer
+  			# pop from top of the stack to rbx and increment or decrement 
+  			# increment stack pointer if df (flag) is set or not
   1a:                   mov    rax,rdx
   1d:                   ret # copy  value from rdx to rax and return
 ```
