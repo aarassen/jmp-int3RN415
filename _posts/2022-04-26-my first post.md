@@ -83,9 +83,11 @@ begin:
   17:                   loop   begin 
   			# Performs a loop operation using the RCX as a counter
   			# if rcx = 0 pass
-  19:                   pop    rbx
+  19:                   pop    rbx 
+  			# pop from top of the stack to rbx 
+  			#and increment stack pointer
   1a:                   mov    rax,rdx
-  1d:                   ret
+  1d:                   ret # copy  value from rdx to rax and return
 ```
 
 finding more resource
