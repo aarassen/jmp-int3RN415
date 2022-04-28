@@ -82,7 +82,7 @@ begin:
   15:                   stos   QWORD PTR es:[rdi],rax #Store RAX at address RDI 
   
   17:                   loop   begin 
-  			# Performs a loop operation using the RCX as a counter
+  			# Performs a loop operation using the RCX as a counter and keep decrimenting it 
   			# if rcx = 0 pass
   19:                   pop    rbx 
   			# pop from top of the stack to rbx and increment or decrement 
