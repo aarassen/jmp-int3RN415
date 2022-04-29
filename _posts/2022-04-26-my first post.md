@@ -51,7 +51,12 @@ begin:
     
 **Step3 : understand the code using the resouurce**
 from calling convention i understund that :
-	1st arg is in 
+
+	1st arg is in RDI
+    2st arg is in RSI
+    3st arg is in RDX
+    4st arg is in RCX
+    
 	
 understatunding f:
   	
