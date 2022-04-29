@@ -35,7 +35,7 @@ begin:
 
 **Step1 : understanding the question?**
 
-	The function has **4 arguments**  (i.e., arguments are passed in registers).== take 4 args + return address
+	The function has **4 arguments**  (i.e., arguments are passed in registers).== check calling convention
     compiled by GCC for Linux x64 ABI == 64bit abi
     
     
@@ -55,11 +55,11 @@ understatunding f:
   	
 ```asm
     f:
-       0:                   mov    r8,rdi 	# copy rdi (destination) to r8 
+       0:                   mov    r8,rdi 	# copy rdi  to r8 
        3:                   push   rbx 		#  puch the value from rbx to the stack
-       4:                   mov    rdi,rsi 	# copy the rsi (source) to rdi (destination)
+       4:                   mov    rdi,rsi 	# copy the rsi  to rdi 
        7:                   mov    rbx,rdx  # copy the value from rdx to rbx 
-       a:                   mov    rsi,r8 	# copy the value from r8 to rsi (source)
+       a:                   mov    rsi,r8 	# copy the value from r8 to rsi 
        d:                   xor    rdx,rdx 	# set rdx to 0
 ```
 
@@ -105,8 +105,3 @@ finding more resource
 [stos instruction](https://www.felixcloutier.com/x86/stos:stosb:stosw:stosd:stosq)
 
 [loop instruction](https://www.felixcloutier.com/x86/loop:loopcc)
-
-
-
-
-
