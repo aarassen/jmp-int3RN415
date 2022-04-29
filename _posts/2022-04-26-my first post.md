@@ -50,6 +50,8 @@ begin:
 [x64 calling convention](https://www.ired.team/miscellaneous-reversing-forensics/windows-kernel-internals/linux-x64-calling-convention-stack-frame)
     
 **Step3 : understand the code using the resouurce**
+from calling convention i understund that :
+	1st arg is in 
 	
 understatunding f:
   	
@@ -105,3 +107,6 @@ finding more resource
 [stos instruction](https://www.felixcloutier.com/x86/stos:stosb:stosw:stosd:stosq)
 
 [loop instruction](https://www.felixcloutier.com/x86/loop:loopcc)
+
+
+
