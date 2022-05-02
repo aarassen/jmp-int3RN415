@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-# Welcome to jmp internal 
+# Welcome to jmp internals 
 
 So i would like to start by stating the purpose of this blog. In here i will posts about reverse engineering and exploit developement, and i can share also my ctf writeup here.
 
@@ -112,7 +112,7 @@ begin:
 
 
 
-line 10 : after \<f\> so it find a value 64bit in lenght pointed by rsi and put in rax after that  increment or decrement  rsi by 8  (check DF flag ;)
+line 10 : after \<f\> so it find a value 64bit in lenght pointed by rsi and put it in rax after that  increment or decrement  rsi by 8  (check DF flag ;)
 
 line 12 :then divide rax by the value in rbx (dont forgot that rdx is 0) and result saved in rax 
 
