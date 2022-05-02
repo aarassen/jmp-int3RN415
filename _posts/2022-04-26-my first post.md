@@ -101,10 +101,10 @@ begin:
   15:                   stos   QWORD PTR es:[rdi],rax #Store RAX at address RDI 
   
   17:                   loop   begin 
-  			# Performs a loop operation using the RCX as a counter and keep decrimenting it 
+  			# Performs a loop operation using the RCX as a counter and keep decrementing it 
   			# if rcx = 0 pass
   19:                   pop    rbx 
-  			# pop from top of the stack to rbx and increment or decrement 
+  			# pop from top of the stack to rbx and increment or decrement the stack pointer
   			# increment stack pointer if df (flag) is set or not
   1a:                   mov    rax,rdx
   1d:                   ret # copy  value from rdx to rax and return
@@ -112,7 +112,17 @@ begin:
 
 
 
-so it find a value 64bit in lenght  and put in rax then divide it by the value in rbx 
+line 10 : after \<f\> so it find a value 64bit in lenght pointed by rsi and put in rax after that  increment or decrement  rsi by 8  (check DF flag ;)
+
+line 12 :then divide rax by the value in rbx (dont forgot that rdx is 0) and result saved in rax 
+
+line 15 :then move  rax  to memory pointed by rdi after that  increment or decrement  rsi by 8  (check DF flag ;)
+
+line 17 :loop from start until rcx is 0 then execute next instruction
+
+line 19 :pop rbx because we needed to use rbx in start so we saved it's value in \<f\> at the stack and now we get the value back
+
+line 1a : mov rdx which is 0 in value to rax then return
 
 
 finding more resource
@@ -122,3 +132,18 @@ finding more resource
 [stos instruction](https://www.felixcloutier.com/x86/stos:stosb:stosw:stosd:stosq)
 
 [loop instruction](https://www.felixcloutier.com/x86/loop:loopcc)
+
+
+# final thought:
+1-save rbx to the stack
+2-it copy 8byte from memory pointed by 1st argument 
+3-then divid it with 3rd argument 
+4-and move the result to memory pointed by 2 argument 
+5-until 4 argument equal 0
+6-pob value we saved in the stack back to rbx
+7-return 0
+
+
+# CONCLUSION :
+
+i need a job in the field of reverse engineering and exploit developement
