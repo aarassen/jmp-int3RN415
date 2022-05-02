@@ -70,6 +70,16 @@ understatunding f:
        d:                   xor    rdx,rdx 	# set rdx to 0
 ```
 
+**so what happen here ???**
+
+	1st arg was in rdi now its in rsi and r8
+    
+    2end arg was in rsi now its in rdi
+    
+    3rd arg was in rdx  after pushing rbx to the stack we place rdx in rbx then we set rdx to 0
+    
+    4th arg stay in ecx
+    
 finding more resource
 
 [Registers purpose](http://6.s081.scripts.mit.edu/sp18/x86-64-architecture-guide.html)
@@ -112,6 +122,3 @@ finding more resource
 [stos instruction](https://www.felixcloutier.com/x86/stos:stosb:stosw:stosd:stosq)
 
 [loop instruction](https://www.felixcloutier.com/x86/loop:loopcc)
-
-
-
