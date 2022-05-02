@@ -135,13 +135,14 @@ finding more resource
 
 
 # final thought:
-1-save rbx to the stack
-2-it copy 8byte from memory pointed by 1st argument 
-3-then divid it with 3rd argument 
-4-and move the result to memory pointed by 2 argument 
-5-until 4 argument equal 0
-6-pob value we saved in the stack back to rbx
-7-return 0
+- save rbx to the stack
+- it copy 8byte from memory pointed by 1st argument 
+- then divid it with 3rd argument 
+- and move the result to memory pointed by 2 argument 
+- until 4 argument equal 0
+- pob value we saved in the stack back to rbx
+- return 0
+
 
 
 # CONCLUSION :
