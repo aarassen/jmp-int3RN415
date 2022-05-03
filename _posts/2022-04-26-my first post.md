@@ -3,7 +3,7 @@ published: true
 ---
 # Welcome to jmp internals 
 
-So i would like to start by stating the purpose of this blog. In here i will posts about reverse engineering and exploit developement, and i can share also my ctf writeup here.
+So i would like to start by stating the purpose of this blog. In here i will post about reverse engineering and exploit developement, and i can share also my ctf writeup here.
 
 so let's begin with our [first challenge](https://challenges.re/1/)
 
