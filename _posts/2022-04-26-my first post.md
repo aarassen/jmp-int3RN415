@@ -147,4 +147,4 @@ finding more resource
 
 # CONCLUSION :
 
-i need a job in the field of reverse engineering and exploit developement
+i need a job in the field of reverse engineering and exploit developement ;)
