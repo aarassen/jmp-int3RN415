@@ -136,9 +136,9 @@ finding more resource
 
 # final thought:
 - save rbx to the stack
-- it copy 8 byte from memory pointed by 1st argument 
+- it copy 8 byte from memory pointed by the 1st argument 
 - then divid it with 3rd argument 
-- and move the result to memory pointed by 2 argument 
+- and move the result to memory pointed by the 2nd argument 
 - until 4 argument equal 0
 - pob value we saved in the stack back to rbx
 - return 0
