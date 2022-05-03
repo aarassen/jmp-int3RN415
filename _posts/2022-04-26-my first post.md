@@ -136,7 +136,7 @@ finding more resource
 
 # final thought:
 - save rbx to the stack
-- it copy 8byte from memory pointed by 1st argument 
+- it copy 8 byte from memory pointed by 1st argument 
 - then divid it with 3rd argument 
 - and move the result to memory pointed by 2 argument 
 - until 4 argument equal 0
